@@ -1,0 +1,2 @@
+# stereotyp
+DDD stereotyps 

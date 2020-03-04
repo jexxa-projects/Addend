@@ -17,8 +17,7 @@ jobs:
       run: mvn -B package --file pom.xml
 
 
-deploy:
-
+  deploy:
     runs-on: ubuntu-latest
 
     steps:

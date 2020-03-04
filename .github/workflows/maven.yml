@@ -28,6 +28,6 @@ jobs:
         java-version: 1.11
     - name: Deploy to Github Package Registry
       env:
-        GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME2 }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN2 }}
       run: mvn --settings settings.xml --file pom.xml deploy

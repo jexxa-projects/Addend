@@ -13,7 +13,7 @@
                 <repository>
                     <id>github</id>
                     <name>GitHub repplix Apache Maven Packages</name>
-                    <url>https://maven.pkg.github.com/repplix</url>
+                    <url>https://maven.pkg.github.com/repplix/stereotype</url>
                 </repository>
             </repositories>
         </profile>

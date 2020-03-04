@@ -1,3 +1,5 @@
 .idea/*
 stereotyp.iml
 target/*
+*.iml
+

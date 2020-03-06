@@ -33,6 +33,17 @@
     </dependency>
   </dependencies>
 
+  <repositories>
+    <repository>
+      <id>github</id>
+      <name>GitHub repplix Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/repplix/stereotype</url>
+      <releases><enabled>true</enabled></releases>
+      <snapshots><enabled>true</enabled></snapshots>
+    </repository>
+  </repositories>
+
+
   <distributionManagement>
     <snapshotRepository>
       <id>github</id>

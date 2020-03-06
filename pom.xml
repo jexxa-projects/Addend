@@ -48,7 +48,7 @@
     <snapshotRepository>
       <id>github</id>
       <name>GitHub snapshot</name>
-      <url>https://maven.pkg.github.com/OWNER/maven-packages/</url>
+      <url>https://maven.pkg.github.com/repplix/maven-packages/</url>
       <uniqueVersion>true</uniqueVersion>
     </snapshotRepository>
     <repository>

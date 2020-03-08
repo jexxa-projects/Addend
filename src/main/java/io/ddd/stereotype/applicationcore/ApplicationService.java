@@ -8,8 +8,11 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 /**
- * Repräsentiert einen ApplicationService, der einen externen Client Zugriff auf DomainServices ermöglicht. Ein ApplicationService
- * fasst typischerweise Use-Cases zusammen, stellt aber keine Fachlogik zur Verfügung.
+ * Represents an ApplicationService in terms of Domain Driven Design.
+ *
+ * In terms of an hexagonal architecture an ApplicationService also represents an inbound port which provides methods
+ * that can be used by a @DrivingAdapter.
+ *
  */
 @Target(TYPE)
 @Retention(RUNTIME)

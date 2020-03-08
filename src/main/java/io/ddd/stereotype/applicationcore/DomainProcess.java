@@ -19,6 +19,8 @@ import java.lang.annotation.Target;
  * Each DomainProcess-Object includes a single method which receives either a Command or a DomainEvent.  Depending on the
  * input this method is either annotated with @CommandHandler or a @DomainEventHandler.
  *
+ * Note: In case a @DomainService processes a @DomainEvent it acts as port in terms of a hexagonal architecture.
+ *
  * Each DomainProcess typically starts several @DomainProcessSteps which in turn operate on the domain objects
  */
 @Target(TYPE)

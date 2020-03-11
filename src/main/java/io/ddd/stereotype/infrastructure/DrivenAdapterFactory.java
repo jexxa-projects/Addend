@@ -9,7 +9,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 /**
- * Represents either a factory or a factory method to create a @DrivenAdapter.
+ * Represents either a factory or a factory method to create a {@link DrivenAdapter}.
  */
 @Target({TYPE, METHOD})
 @Retention(RUNTIME)

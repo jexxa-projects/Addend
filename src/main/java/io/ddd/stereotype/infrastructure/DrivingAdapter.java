@@ -8,9 +8,9 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 /**
- * A @DrivingAdapter drives an application core by receiving commands via a specific protocol such as REST or JMS.
- * A @DrivingAdapter can use available inbound ports provided by the application core to execute commands or
- * a @DomainEvent and 'drive' the application.
+ * A {@link DrivingAdapter} drives an application core by receiving commands via a specific protocol such as REST or JMS.
+ * A {@link DrivingAdapter} can use available inbound ports provided by the application core to execute commands or
+ * a {{@link io.ddd.stereotype.applicationcore.DomainEvent} and 'drive' the application.
  */
 @Target(TYPE)
 @Retention(RUNTIME)

@@ -8,10 +8,10 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 /**
- * Represents a @DomainService which realizes business logic which can not be assigned to an @Aggregate.
+ * Represents a {@link DomainService} which realizes business logic which can not be assigned to an {@link Aggregate}.
  *
- * In case you do not use a @DomainProcess a @DomainService can also be used as a port in case they
- * process a @DomainEvent.  
+ * In case you do not use a {@link DomainProcess} a {@link DomainService} can also be used as a port in case they
+ * process a {@link DomainEvent}.
  */
 @Target(TYPE)
 @Retention(RUNTIME)

@@ -9,7 +9,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 /**
- * Represents either a factory or a factory method to create a new @Aggregate. 
+ * Represents either a factory or a factory method to create a new {@link Aggregate}.
  */
 @Target({TYPE, METHOD})
 @Retention(RUNTIME)

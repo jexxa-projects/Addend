@@ -8,10 +8,10 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 /**
- * Represents an ApplicationService in terms of Domain Driven Design.
+ * Represents an {@link ApplicationService} in terms of Domain Driven Design.
  *
  * In terms of an hexagonal architecture an ApplicationService also represents an inbound port which provides methods
- * that can be used by a @DrivingAdapter.
+ * that can be used by a {@link io.ddd.stereotype.infrastructure.DrivingAdapter}.
  *
  */
 @Target(TYPE)

@@ -6,9 +6,9 @@ import java.lang.annotation.Documented;
 import java.lang.annotation.Target;
 
 /**
- * Represents a DDD aggregate or entity.
+ * Represents an aggregate or entity in terms of Domain Driven Design.
  *
- * Each aggregate has a @AggregateID which is a Unique ID and a @AggregateFactory which creates a new Aggregate.
+ * Each aggregate has a {@link AggregateID} which is a Unique ID and an {@link AggregateFactory} which creates a new {@link Aggregate}.
  */
 @Target(TYPE)
 @Documented

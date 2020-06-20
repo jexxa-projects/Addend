@@ -12,20 +12,20 @@ import java.lang.annotation.Target;
  * including its process steps. This can simplify mapping from a concrete use case started from an {@link ApplicationService}
  * and mapping to aggregates.
  *
- * For this purpose we introduce a DomainProcess-Layer between application- and domain-layer. This layer does not include
+ * For this purpose we introduce a DomainWorkflow-Layer between application- and domain-layer. This layer does not include
  * any business logic and is typically only required/helpful when representing a production process including its production
- * steps has a high value for the business.
+ * steps has a high value for the business. In addition a DomainWorkflow is also used to encapsulate and represent transaction within a domain 
  *
- * Each DomainProcess-Object includes a single method which receives either a command or a {@link DomainEvent}.  Depending on the
+ * Each DomainWorkflow-Object includes a single method which receives either a command or a {@link DomainEvent}.  Depending on the
  * input this method is either annotated with {@link CommandHandler} or a {@link DomainEventHandler}.
  *
  * Note: In case a {@link DomainService} processes a {@link DomainEvent} it acts as port in terms of a hexagonal architecture.
  *
- * Each {@link DomainProcess} typically starts several {@link DomainProcessStep}-objects which in turn operate on the domain objects
+ * Each {@link DomainWorkflow} typically starts several {@link DomainProcessStep}-objects which in turn operate on the domain objects
  */
 @Target(TYPE)
 @Retention(RUNTIME)
 @Documented
-public @interface DomainProcess
+public @interface DomainWorkflow
 {
 }

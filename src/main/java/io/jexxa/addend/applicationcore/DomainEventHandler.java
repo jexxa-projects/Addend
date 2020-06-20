@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
  * Note: A {@link DomainEventHandler} has to be used if the functionality is not provided via an {@link ApplicationService}
  * and must be initialized as a result of a {@link DomainEvent}. Otherwise you have to use {@link CommandHandler}
  *
- * Note: A {@link DomainEventHandler} is typically provided by a {@link DomainProcess} or a {@link DomainService}
+ * Note: A {@link DomainEventHandler} is typically provided by a {@link DomainWorkflow} or a {@link DomainService}
  */
 
 @Target(METHOD)

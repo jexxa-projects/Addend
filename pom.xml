@@ -49,31 +49,20 @@
 
   </properties>
 
-  <repositories>
-    <repository>
-      <id>github</id>
-      <name>GitHub Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/repplix/Addend</url>
-      <releases><enabled>true</enabled></releases>
-      <snapshots><enabled>true</enabled></snapshots>
-    </repository>
-  </repositories>
-
-
   <distributionManagement>
     <snapshotRepository>
-      <id>github-addend</id>
-      <name>GitHub snapshot</name>
-      <url>https://maven.pkg.github.com/repplix/Addend</url>
+      <id>oss.sonatype.org</id>
+      <name>Addend snapshot</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
       <uniqueVersion>true</uniqueVersion>
     </snapshotRepository>
     <repository>
-      <id>github-addend</id>
-      <name>GitHub OWNER Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/repplix/Addend</url>
+      <id>oss.sonatype.org</id>
+      <name>Addend Maven Packages</name>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+      <uniqueVersion>true</uniqueVersion>
     </repository>
   </distributionManagement>
-
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->

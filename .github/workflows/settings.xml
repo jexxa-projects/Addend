@@ -43,7 +43,7 @@
 <servers>
     <server>
         <id>github-Addend</id>
-        <password>${env.GITHUB_TOKEN_ADDEND}</password>
+        <password>${env.GITHUB_TOKEN2}</password>
         <username>${env.GITHUB_USERNAME2}</username>
     </server>
 

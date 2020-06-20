@@ -17,7 +17,9 @@ public @interface DomainEvent
 {
 
     /**
-     * Typ of the DomainEvent.
+     * Name of the DomainEvent.
+     * 
+     * @return String name of the domain event 
      */
     String value() default "";
 

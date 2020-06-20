@@ -20,7 +20,7 @@ public @interface AggregateFactory
     /**
      * The type of aggregate created
      *
-     * @return Class<?> Class information of the Aggregate
+     * @return Class information of the Aggregate
      */
     Class<?> value();
 

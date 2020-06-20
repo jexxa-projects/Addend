@@ -19,7 +19,7 @@ public @interface DomainEvent
     /**
      * Name of the DomainEvent.
      * 
-     * @return String name of the domain event 
+     * @return Name of the domain event
      */
     String value() default "";
 

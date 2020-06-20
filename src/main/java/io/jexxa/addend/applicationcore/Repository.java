@@ -1,4 +1,4 @@
-package io.ddd.stereotype.applicationcore;
+package io.jexxa.addend.applicationcore;
 
 import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
@@ -8,11 +8,12 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 /**
- * Represents a service that can only be realized in infrastructure such as sending a {@link DomainEvent}.
+ * Represents a {@link Repository} which manages a specific type of {@link Aggregate}.
  */
 @Target(TYPE)
 @Retention(RUNTIME)
 @Documented
-public @interface InfrastructureService
+public @interface Repository
 {
+
 }

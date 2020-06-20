@@ -3,18 +3,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>io.ddd.stereotype</groupId>
-  <artifactId>stereotype</artifactId>
-  <version>1.2-SNAPSHOT</version>
+  <groupId>io.jexxa.addend</groupId>
+  <artifactId>addend</artifactId>
+  <version>1.0-SNAPSHOT</version>
 
-  <name>stereotype</name>
+  <name>addend</name>
 
   <url>https://github.com/repplix</url>
 
   <scm>
-    <connection>scm:git:https://github.com/repplix/stereotype.git</connection>
-    <url>http://github.com/repplix/stereotype</url>
-    <developerConnection>scm:git:https://github.com/repplix/stereotype.git</developerConnection>
+    <connection>scm:git:https://github.com/repplix/addend.git</connection>
+    <url>http://github.com/repplix/addend</url>
+    <developerConnection>scm:git:https://github.com/repplix/addend.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
@@ -38,7 +38,7 @@
     <repository>
       <id>github</id>
       <name>GitHub repplix Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/repplix/stereotype</url>
+      <url>https://maven.pkg.github.com/repplix/addend</url>
       <releases><enabled>true</enabled></releases>
       <snapshots><enabled>true</enabled></snapshots>
     </repository>
@@ -49,13 +49,13 @@
     <snapshotRepository>
       <id>github</id>
       <name>GitHub snapshot</name>
-      <url>https://maven.pkg.github.com/repplix/stereotype</url>
+      <url>https://maven.pkg.github.com/repplix/addend</url>
       <uniqueVersion>true</uniqueVersion>
     </snapshotRepository>
     <repository>
       <id>github</id>
       <name>GitHub OWNER Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/repplix/stereotype</url>
+      <url>https://maven.pkg.github.com/repplix/addend</url>
     </repository>
   </distributionManagement>
 

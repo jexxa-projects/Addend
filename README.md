@@ -1,2 +1,2 @@
-# stereotype
-DDD stereotypes 
+# Addend - Annotations for Domain Driven Design 
+

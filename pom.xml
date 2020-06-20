@@ -7,13 +7,27 @@
   <artifactId>Addend</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>Addend</name>
 
-  <url>https://github.com/repplix</url>
+  <!-- Project Information -->
+  <name>Addend</name>
+  <url>https://github.com/repplix/Aexxa</url>
+  <description>Addend - Annotations for Domain Driven Design</description>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>Michael Repplinger</name>
+    </developer>
+  </developers>
 
   <scm>
     <connection>scm:git:https://github.com/repplix/Addend.git</connection>
-    <url>http://github.com/repplix/addend</url>
+    <url>http://github.com/repplix/Addend</url>
     <developerConnection>scm:git:https://github.com/repplix/Addend.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
@@ -21,15 +35,25 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>11</maven.compiler.release>
-    <maven.compiler.source>11</maven.compiler.source>
-    <maven.compiler.target>11</maven.compiler.target>
+
+    <!--version of  maven plugins  -->
+    <gpg.plugin.version>1.6</gpg.plugin.version>
+    <maven.clean.plugin>3.1.0</maven.clean.plugin>
+    <maven.compiler.plugin>3.8.1</maven.compiler.plugin>
+    <maven.deploy.plugin>3.0.0-M1</maven.deploy.plugin>
+    <maven.install.plugin>3.0.0-M1</maven.install.plugin>
+    <maven.jar.plugin>3.2.0</maven.jar.plugin>
+    <maven.resources.plugin>3.1.0</maven.resources.plugin>
+    <maven.site.plugin>3.9.0</maven.site.plugin>
+    <maven.release.plugin>3.0.0-M1</maven.release.plugin>
+
   </properties>
 
   <repositories>
     <repository>
       <id>github</id>
-      <name>GitHub repplix Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/repplix/addend</url>
+      <name>GitHub Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/repplix/Addend</url>
       <releases><enabled>true</enabled></releases>
       <snapshots><enabled>true</enabled></snapshots>
     </repository>
@@ -40,13 +64,13 @@
     <snapshotRepository>
       <id>github</id>
       <name>GitHub snapshot</name>
-      <url>https://maven.pkg.github.com/repplix/addend</url>
+      <url>https://maven.pkg.github.com/repplix/Addend</url>
       <uniqueVersion>true</uniqueVersion>
     </snapshotRepository>
     <repository>
       <id>github</id>
       <name>GitHub OWNER Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/repplix/addend</url>
+      <url>https://maven.pkg.github.com/repplix/Addend</url>
     </repository>
   </distributionManagement>
 
@@ -57,43 +81,91 @@
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>${maven.clean.plugin}</version>
         </plugin>
         <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
-          <version>3.0.2</version>
+          <version>${maven.resources.plugin}</version>
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.0</version>
+          <version>${maven.compiler.plugin}</version>
         </plugin>
         <plugin>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.22.1</version>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>${maven.release.plugin}</version>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>3.0.2</version>
+          <version>${maven.jar.plugin}</version>
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
-          <version>2.5.2</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-deploy-plugin</artifactId>
-          <version>2.8.2</version>
+          <version>${maven.install.plugin}</version>
         </plugin>
         <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
-          <version>3.7.1</version>
+          <version>${maven.site.plugin}</version>
         </plugin>
         <plugin>
-          <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>3.0.0</version>
-        </plugin>                      
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-gpg-plugin</artifactId>
+          <version>${gpg.plugin.version}</version>
+        </plugin>
+        <plugin>
+          <!-- explicitly define maven-deploy-plugin after other to force exec order -->
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>${maven.deploy.plugin}</version>
+          <executions>
+            <execution>
+              <id>deploy</id>
+              <phase>deploy</phase>
+              <goals><goal>deploy</goal></goals>
+            </execution>
+          </executions>
+        </plugin>
       </plugins>
     </pluginManagement>
+
+    <plugins>
+      <plugin>
+        <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+          <releaseProfiles>sign-artifacts</releaseProfiles>
+          <arguments>-Psign-artifacts</arguments>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.2.0</version>
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
+            <goals>
+              <goal>jar</goal>
+              <goal>javadoc-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>3.2.1</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar</goal>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+    
   </build>
 </project>

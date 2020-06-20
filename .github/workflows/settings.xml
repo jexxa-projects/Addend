@@ -22,7 +22,7 @@
                 <snapshots><enabled>false</enabled></snapshots>
             </repository>
             <repository>
-                <id>github-addend</id>
+                <id>github-Addend</id>
                 <name>GitHub OWNER Apache Maven Packages</name>
                 <url>https://github.com/repplix/Addend</url>
                 <releases><enabled>true</enabled></releases>
@@ -42,8 +42,8 @@
 
 <servers>
     <server>
-        <id>github-stereotype</id>
-        <password>${env.GITHUB_TOKEN2}</password>
+        <id>github-Addend</id>
+        <password>${env.GITHUB_TOKEN_ADDEND}</password>
         <username>${env.GITHUB_USERNAME2}</username>
     </server>
 

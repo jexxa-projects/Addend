@@ -2,7 +2,7 @@
 
 [![Maven Central](https://img.shields.io/maven-central/v/io.jexxa.addend/Addend)](https://maven-badges.herokuapp.com/maven-central/io.jexxa.addend/Addend/) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-A set of Java annotations which can be used to annotate your code with pattern language of Domain Driven Design. They serve as an additional documentation within your source code to ensure a high degree of pattern matching. In addition, they are available during runtime so that they can be used by static analysis tools to improve code analysis as well as for adding cross-cutting concerns.
+A set of Java annotations which can be used to annotate your code with pattern language of Domain Driven Design. They serve as an additional documentation within your source code to ensure a high degree of pattern matching. In addition, they are available during runtime so that they can be used by both static analysis tools to improve code analysis and for runtime validation or adding cross-cutting concerns via AspectJ.
 
 ## Supported Java environments
 *   Java 8 (or higher)

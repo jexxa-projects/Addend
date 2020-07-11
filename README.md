@@ -24,3 +24,7 @@ A set of Java annotations which can be used to annotate your code with pattern l
 ```groovy
 compile "io.jexxa.addend:Addend:1.0"
 ``` 
+
+## Further information 
+
+*   [Domain-Driven Design Reference](https://domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)

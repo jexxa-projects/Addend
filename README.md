@@ -15,15 +15,21 @@ A set of Java annotations which can be used to annotate your code with pattern l
 <dependency>
   <groupId>io.jexxa.addend</groupId>
   <artifactId>Addend</artifactId>
-  <version>1.0</version>
+  <version>1.1.0</version>
 </dependency> 
 ```
 
 ### Gradle
 
 ```groovy
-compile "io.jexxa.addend:Addend:1.0"
+compile "io.jexxa.addend:Addend:1.1.0"
 ``` 
+   
+## How to use it
+To get an idea how this project can support you and your team please refer to the following two tutorials.
+
+*   A tutorial without Addend: [`BookStore`](https://github.com/repplix/Jexxa/tree/master/tutorials/BookStore) 
+*   The same tutorial using Addend: [`BookStoreJ`](https://github.com/repplix/Jexxa/tree/master/tutorials/BookStoreJ)
 
 ## Further information 
 

@@ -28,8 +28,7 @@ compile "io.jexxa.addend:Addend:1.2.0"
 ## How to use it
 To get an idea how this project can support you and your team please refer to the following two tutorials.
 
-*   A tutorial without Addend: [`BookStore`](https://github.com/repplix/JexxaTutorials/blob/main/BookStore/README.md) 
-*   The same tutorial using Addend: [`BookStoreJ`](https://github.com/repplix/JexxaTutorials/blob/main/BookStoreJ/README.md)
+*   A tutorial using Addend: [`BookStore`](https://github.com/jexxa-projects/JexxaTutorials/blob/main/BookStore/README-PatternLanguage.md) 
 
 ## Further information 
 

@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## \[1.3.0] - 2022-mm-dd
+### Changed
+-   Declared following annotations as deprecated. Reason is that they can easily cause an anemic domain model.
+    -   CommandHandler
+    -   DomainProcessStep
+    -   DomainWorkflow
+
 ## \[1.2.0] - 2022-03-29
 ### Added
 -   Annotation `ValueObjectFactory` to declare a factory or a factory method for an `ValueObject`.

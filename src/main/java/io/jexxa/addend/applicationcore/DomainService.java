@@ -9,9 +9,6 @@ import java.lang.annotation.Target;
 
 /**
  * Represents a {@link DomainService} which realizes business logic which can not be assigned to an {@link Aggregate}.
- *
- * In case you do not use a {@link DomainWorkflow} a {@link DomainService} can also be used as a port in case they
- * process a {@link DomainEvent}.
  */
 @Target(TYPE)
 @Retention(RUNTIME)

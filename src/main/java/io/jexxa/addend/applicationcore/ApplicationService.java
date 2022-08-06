@@ -9,8 +9,8 @@ import java.lang.annotation.Target;
 
 /**
  * Represents an {@link ApplicationService} in terms of Domain Driven Design.
- *
- * In terms of an hexagonal architecture an ApplicationService also represents an inbound port which provides methods
+ * <p>
+ * In terms of a hexagonal architecture an ApplicationService also represents an inbound port which provides methods
  * that can be used by a {@link io.jexxa.addend.infrastructure.DrivingAdapter}.
  *
  */

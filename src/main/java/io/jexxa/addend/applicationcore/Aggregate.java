@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 /**
  * Represents an aggregate or entity in terms of Domain Driven Design.
- *
+ * <p>
  * Each aggregate has a {@link AggregateID} which is a Unique ID and an {@link AggregateFactory} which creates a new {@link Aggregate}.
  */
 @Target(TYPE)

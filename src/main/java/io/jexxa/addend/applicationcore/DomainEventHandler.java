@@ -9,9 +9,9 @@ import java.lang.annotation.Target;
 
 /**
  * Represents a handler for processing a {@link DomainEvent}.
- *
- * Note: A {@link DomainEventHandler} has to be used if the functionality is triggered by a `DomainEvent`. Such a method typically must be
- * utilized as a result of a {@link DomainEvent}. Otherwise, you should use {@link CommandHandler}.
+ * <p>
+ * Note: A {@link DomainEventHandler} has to be used if another component within your application core
+ * handles a {@link DomainEvent} that occurred within the same bounded context. Typically, this is a {@link DomainService}.
  *
  */
 @Target(METHOD)

@@ -8,7 +8,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 /**
- * Represents the ID of an aggregate. Note that each {@link Aggregate} needs exactly one {@link AggregateID}
+ * Represents the unique ID of an aggregate. Note that each {@link Aggregate} needs exactly one {@link AggregateID}
  */
 @Target(METHOD)
 @Retention(RUNTIME)

@@ -8,7 +8,8 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 /**
- * Represents a service that can only be realized in infrastructure such as sending a {@link DomainEvent}.
+ * Represents a service that can only be realized in infrastructure such as sending a {@link DomainEvent} to other
+ * bounded contexts.
  */
 @Target(TYPE)
 @Retention(RUNTIME)

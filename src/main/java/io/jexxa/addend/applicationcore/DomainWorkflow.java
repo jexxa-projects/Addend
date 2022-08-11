@@ -14,7 +14,7 @@ import java.lang.annotation.Target;
  * <p>
  * For this purpose we introduce a DomainWorkflow-Layer between application- and domain-layer. This layer does not include
  * any business logic and is typically only required/helpful when representing a production process including its production
- * steps has a high value for the business. In addition a DomainWorkflow is also used to encapsulate and represent transaction within a domain 
+ * steps has a high value for the business. In addition, a DomainWorkflow is also used to encapsulate and represent transaction within a domain
  * <p>
  * Each DomainWorkflow-Object includes a single method which receives either a command or a {@link DomainEvent}.  Depending on the
  * input this method is either annotated with {@link CommandHandler} or a {@link DomainEventHandler}.

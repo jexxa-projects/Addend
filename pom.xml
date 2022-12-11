@@ -15,7 +15,7 @@
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
       <distribution>repo</distribution>
     </license>
   </licenses>
@@ -26,9 +26,9 @@
   </developers>
 
   <scm>
-    <connection>scm:git:https://github.com/repplix/Addend.git</connection>
-    <url>http://github.com/repplix/Addend</url>
-    <developerConnection>scm:git:https://github.com/repplix/Addend.git</developerConnection>
+    <connection>scm:git:https://github.com/jexxa-projects/Addend.git</connection>
+    <url>https://github.com/jexxa-projects/Addend</url>
+    <developerConnection>scm:git:https://github.com/jexxa-projects/Addend.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 

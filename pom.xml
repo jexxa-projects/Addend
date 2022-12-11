@@ -27,7 +27,7 @@
 
   <scm>
     <connection>scm:git:https://github.com/jexxa-projects/Addend.git</connection>
-    <url>https://github.com/jexxa-projects/Addend</url>
+    <url>http://github.com/jexxa-projects/Addend</url>
     <developerConnection>scm:git:https://github.com/jexxa-projects/Addend.git</developerConnection>
     <tag>HEAD</tag>
   </scm>

@@ -15,14 +15,14 @@ A set of Java annotations which can be used to annotate your code with pattern l
 <dependency>
   <groupId>io.jexxa.addend</groupId>
   <artifactId>Addend</artifactId>
-  <version>1.3.0</version>
+  <version>2.0.0</version>
 </dependency> 
 ```
 
 ### Gradle
 
 ```groovy
-compile "io.jexxa.addend:Addend:1.3.0"
+compile "io.jexxa.addend:Addend:2.0.0"
 ``` 
    
 ## How to use it

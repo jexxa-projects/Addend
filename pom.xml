@@ -26,9 +26,9 @@
   </developers>
 
   <scm>
-    <connection>scm:git:https://github.com/repplix/Addend.git</connection>
-    <url>http://github.com/repplix/Addend</url>
-    <developerConnection>scm:git:https://github.com/repplix/Addend.git</developerConnection>
+    <connection>scm:git:https://github.com/jexxa-projects/Addend.git</connection>
+    <url>http://github.com/jexxa-projects/Addend</url>
+    <developerConnection>scm:git:https://github.com/jexxa-projects/Addend.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 

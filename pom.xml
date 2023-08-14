@@ -27,7 +27,7 @@
 
   <scm>
     <connection>scm:git:https://github.com/jexxa-projects/Addend.git</connection>
-    <url>http://github.com/jexxa-projects/Addend</url>
+    <url>https://github.com/jexxa-projects/Addend</url>
     <developerConnection>scm:git:https://github.com/jexxa-projects/Addend.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
@@ -192,7 +192,6 @@
             <id>attach-sources</id>
             <goals>
               <goal>jar</goal>
-              <goal>jar-no-fork</goal>
             </goals>
           </execution>
         </executions>

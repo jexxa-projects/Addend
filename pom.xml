@@ -47,7 +47,7 @@
     <maven.site.plugin>3.12.1</maven.site.plugin>
     <maven.release.plugin>3.0.1</maven.release.plugin>
     <maven.source.plugin>3.3.0</maven.source.plugin>
-    <maven.javadoc.plugin>3.6.2</maven.javadoc.plugin>
+    <maven.javadoc.plugin>3.6.3</maven.javadoc.plugin>
     <maven.enforcer.plugin>3.4.1</maven.enforcer.plugin>
     <maven.surefire.plugin>3.2.2</maven.surefire.plugin>
     <project.scm.id>jexxa-projects</project.scm.id>

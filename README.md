@@ -15,14 +15,14 @@ A set of Java annotations which can be used to annotate your code with pattern l
 <dependency>
   <groupId>io.jexxa.addend</groupId>
   <artifactId>Addend</artifactId>
-  <version>2.0.0</version>
+  <version>2.0.1</version>
 </dependency> 
 ```
 
 ### Gradle
 
 ```groovy
-compile "io.jexxa.addend:Addend:2.0.0"
+compile "io.jexxa.addend:Addend:2.0.1"
 ``` 
    
 ## How to use it
@@ -33,3 +33,9 @@ To get an idea how this project can support you and your team please refer to th
 ## Further information 
 
 *   [Domain-Driven Design Reference](https://domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)
+
+## Copyright and license
+
+Code and documentation copyright 2020–2024 Michael Repplinger.
+Code released under the [Apache 2.0 License](LICENSE)(see [TLDR legal](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)) for details).
+Docs released under [Creative Commons](https://creativecommons.org/licenses/by/4.0/).

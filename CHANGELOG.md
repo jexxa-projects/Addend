@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 -   Annotation `Observer` to declare a `DomainEventPublisher` as used in the book implementing Domain-Driven Design from Vaughn Vernon.
 
 ### Changed
--   Declared following annotations as deprecated. Reason is that they can easily cause an anemic domain model.
+-   Declared following annotations as deprecated. The reason is that they can easily cause an anemic domain model.
     -   CommandHandler
     -   DomainProcessStep
     -   DomainWorkflow

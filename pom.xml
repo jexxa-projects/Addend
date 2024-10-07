@@ -49,7 +49,7 @@
     <maven.source.plugin>3.3.1</maven.source.plugin>
     <maven.javadoc.plugin>3.10.1</maven.javadoc.plugin>
     <maven.enforcer.plugin>3.5.0</maven.enforcer.plugin>
-    <maven.surefire.plugin>3.5.0</maven.surefire.plugin>
+    <maven.surefire.plugin>3.5.1</maven.surefire.plugin>
     <project.scm.id>jexxa-projects</project.scm.id>
   </properties>
 

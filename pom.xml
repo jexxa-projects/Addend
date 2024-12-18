@@ -5,7 +5,7 @@
 
   <groupId>io.jexxa.addend</groupId>
   <artifactId>Addend</artifactId>
-  <version>2.0.2-SNAPSHOT</version>
+  <version>2.0.2</version>
 
 
   <!-- Project Information -->
@@ -29,7 +29,7 @@
     <connection>scm:git:https://github.com/jexxa-projects/Addend.git</connection>
     <url>https://github.com/jexxa-projects/Addend</url>
     <developerConnection>scm:git:https://github.com/jexxa-projects/Addend.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>Addend-2.0.2</tag>
   </scm>
 
   <properties>

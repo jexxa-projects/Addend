@@ -50,26 +50,12 @@
     <maven.javadoc.plugin>3.11.2</maven.javadoc.plugin>
     <maven.enforcer.plugin>3.5.0</maven.enforcer.plugin>
     <maven.surefire.plugin>3.5.3</maven.surefire.plugin>
+    <maven.central.publishing.plugin>0.7.0</maven.central.publishing.plugin>
     <project.scm.id>jexxa-projects</project.scm.id>
   </properties>
 
-  <distributionManagement>
-    <snapshotRepository>
-      <id>oss.sonatype.org</id>
-      <name>Addend snapshot</name>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-      <uniqueVersion>true</uniqueVersion>
-    </snapshotRepository>
-    <repository>
-      <id>oss.sonatype.org</id>
-      <name>Addend Maven Packages</name>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-      <uniqueVersion>true</uniqueVersion>
-    </repository>
-  </distributionManagement>
-
-  <build>
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults -->
+   <build>
+     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
@@ -196,7 +182,16 @@
           </execution>
         </executions>
       </plugin>
-    </plugins>
+      <plugin>
+        <groupId>org.sonatype.central</groupId>
+        <artifactId>central-publishing-maven-plugin</artifactId>
+        <version>${maven.central.publishing.plugin}</version>
+        <extensions>true</extensions>
+        <configuration>
+          <publishingServerId>central</publishingServerId>
+        </configuration>
+      </plugin>
+      </plugins>
   </build>
 
   <profiles>

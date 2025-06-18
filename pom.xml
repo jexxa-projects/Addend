@@ -50,7 +50,7 @@
     <maven.javadoc.plugin>3.11.2</maven.javadoc.plugin>
     <maven.enforcer.plugin>3.5.0</maven.enforcer.plugin>
     <maven.surefire.plugin>3.5.3</maven.surefire.plugin>
-    <maven.central.publishing.plugin>0.7.0</maven.central.publishing.plugin>
+    <maven.central.publishing.plugin>0.8.0</maven.central.publishing.plugin>
     <project.scm.id>jexxa-projects</project.scm.id>
   </properties>
 

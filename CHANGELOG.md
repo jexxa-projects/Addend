@@ -4,7 +4,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## \[2.0.4] - 2025-02-07
+## \[2.1.0] - 2026-10-14
+### Changed
+-   Declared @Observer as obsolete used for the domain event handler. The pattern of using a domain event handler 
+    described here is also known as "side-effect domain event handling."
+    This pattern is no longer considered best practice for the following reasons:
+    1. Coupling: The aggregate implicitly defines who handles the event, rather than
+       just stating what happened.
+    2. Reduced Predictability: It introduces invisible or hidden side effects.
+    
+### Fixed
+-   Maintenance updates for maven plugins
+
+
+## \[2.0.4] - 2026-02-07
 
 ### Fixed
 -   Maintenance updates for maven plugins
